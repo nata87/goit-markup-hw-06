@@ -411,6 +411,10 @@ img {
   display: flex;
   align-items: baseline;
 }
+
+.footer-links {
+  margin-right: 80px;
+}
 .footer-info {
   margin-right: 120px;
 }
