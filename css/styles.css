@@ -522,9 +522,22 @@ img {
 }
 .projects-section-image {
 }
+
+/**
+  |============================
+  | Section Team
+  |============================
+*/
+
 .team-section {
+  padding: 96px 0;
   background-color: var(--cloud-cl);
-  padding: 120px 0;
+}
+
+@media screen and (min-width: 1158px) {
+  .team-section {
+    padding: 120px 0;
+  }
 }
 
 .team-section-title {
@@ -532,15 +545,36 @@ img {
   line-height: 1.11em;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 72px;
+
   color: var(--navyblue-cl);
   text-transform: capitalize;
-  margin-bottom: 72px;
 }
+
 .team-section-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
 }
+
+@media screen and (min-width: 768px) {
+  .team-section-list {
+    flex-direction: row;
+    gap: 64px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-section-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
 .team-section-element {
   background-color: var(--white-cl);
   flex-basis: calc((100% - 3 * 24px) / 4);
@@ -809,9 +843,14 @@ img {
 }
 
 /*section 5*/
-.customers-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.customers {
+  padding-top: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+  .customers {
+    padding: 120px 0;
+  }
 }
 
 .customers-title {
